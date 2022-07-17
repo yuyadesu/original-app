@@ -1,0 +1,122 @@
+.wrapper {
+  display: flex;
+}
+
+.side-bar {
+  width: 200px;
+  height: 100vh;
+}
+.side-bar .side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.side-bar .side-bar-header .header-name a {
+  font-size: 16px;
+  color: red;
+  text-decoration: none;
+}
+.side-bar .side-bar-header .create-room a {
+  border: 1px solid lightblue;
+  padding: 14px;
+}
+
+.rooms {
+  background-color: lightblue;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow-y: scroll;
+}
+.rooms .room {
+  padding: 20px 0 40px;
+}
+.rooms .room .room-name a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff8095;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+.main-content {
+  width: calc(100vw - 200px);
+  border-left: 4px solid black;
+}
+.main-content .main-content-header {
+  background-color: lightblue;
+  height: 50px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid black;
+}
+.main-content .main-content-header .header-title {
+  color: rgb(199, 108, 62);
+  font-size: 24px;
+  margin-top: 4px;
+  margin-left: -10px;
+}
+.main-content .main-content-header .header-button {
+  margin-top: 10px;
+  margin-right: -20px;
+}
+.main-content .main-content-header .header-button a {
+  text-decoration: none;
+  border: 1px solid black;
+  color: rgb(86, 146, 97);
+  padding: 5px;
+  margin: 5px;
+}
+
+.primary-text-code {
+  display: flex;
+  height: calc(100vh - 50px);
+  background-color: rgb(229, 220, 220);
+}
+.primary-text-code .code {
+  width: 60%;
+}
+.primary-text-code .code .code-text textarea {
+  resize: none;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-left: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 90%;
+  height: 500px;
+}
+.primary-text-code .memo {
+  width: 40%;
+}
+.primary-text-code .memo .memo-text textarea {
+  resize: none;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin-top: 100px;
+  margin-left: 30px;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 80%;
+  height: 500px;
+}/*# sourceMappingURL=posts.css.map */
