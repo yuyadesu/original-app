@@ -1,3 +1,125 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$black: black;
+
+.wrapper {
+  display: flex;
+}
+// サイドバー
+.side-bar {
+  width: 200px;
+  height: 100vh;
+  // サイドバーのヘッダー
+  .side-bar-header {
+    height: 100px;
+    padding: 0 20px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-name a{
+      font-size: 16px;
+      color: red;
+      text-decoration: none;
+    }
+    .create-room a {
+      border: 1px solid lightblue;
+      padding: 14px;
+    }
+  }
+}
+// サイドバーのコンテント
+.rooms {
+  background-color: lightblue;
+  height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow-y: scroll;
+  // サイドバーの各タイトル
+  .room {
+    padding: 20px 0 40px;
+    .room-name a {
+      text-decoration: none;
+      color: white;
+      font-size: 13px;
+      color: black;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff8095;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.0);
+  border-radius: 5px;
+}
+
+// メインコンテント
+.main-content {
+  width: calc(100vw - 200px);
+  border-left: 4px solid $black;
+  // メインコンテントのヘッダー
+  .main-content-header {
+    background-color: lightblue;
+    height: 50px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid $black;
+    .header-title {
+      color: rgb(199, 108, 62);
+      font-size: 24px;
+      margin-top: 4px;
+      margin-left: -10px;
+    }
+    .header-button {
+      margin-top: 10px;
+      margin-right: -20px;
+    }
+    .header-button a {
+      text-decoration: none;
+      border: 1px solid black;
+      color: rgb(86, 146, 97);
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+}
+// センターコンテント
+.primary-text-code {
+  display: flex;
+  height: calc(100vh - 50px);
+  background-color: rgb(229, 220, 220);
+  .code {
+    width: 60%;
+    .code-text textarea {
+      resize: none;
+      border-radius: 10px;
+      border: 2px solid $black;
+      margin-top: 100px;
+      margin-left: 30px;
+      padding-top: 5px;
+      padding-left: 10px;
+      width: 90%;
+      height: 500px;
+    }
+  }
+  .memo {
+    width: 40%;
+    .memo-text textarea {
+      resize: none;
+      border-radius: 10px;
+      border: 2px solid $black;
+      margin-top: 100px;
+      margin-left: 30px;
+      padding-top: 5px;
+      padding-left: 10px;
+      width: 80%;
+      height: 500px;
+    }
+  }
+}
