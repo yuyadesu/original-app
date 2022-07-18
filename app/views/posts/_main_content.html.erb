@@ -6,8 +6,13 @@
   </div>
   <div class="right-header">
     <div class="header-button">
-      <%= link_to "新規登録" %>
-      <%= link_to "ログイン" %>
+        <% if user_signed_in? %>
+          <%= link_to current_user.name, "#", class: "user-nickname" %></li>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+        <% else %>
+          <%= link_to 'ログイン', user_session_path, class: "login" %></li>
+          <%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+        <% end %>
     </div>
   </div>
 </div>
