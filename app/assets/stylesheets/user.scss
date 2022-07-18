@@ -4,7 +4,7 @@
   padding: 60px;
   background-color: #fff;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .account-page .account-page__inner .account-page__inner--left, .account-page .account-page__inner .account-page__inner--right {
   float: left;
@@ -20,6 +20,10 @@
   letter-spacing: 3px;
   font-size: 40px;
   font-weight: 200;
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 .account-page .account-page__header h2:after {
   content: "";
